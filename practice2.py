@@ -85,4 +85,4 @@ def weather_alert(temp, wind_speed):
     alert += "HOLD ON TO YOUR HAT"
     if not alert:
         return"ENJOY THE WEATHER"
-    return alert
+    return
