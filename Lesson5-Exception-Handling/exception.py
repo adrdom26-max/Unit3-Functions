@@ -70,10 +70,20 @@ print(f"Your are {user_age} years old")
 # Challenge 1: Safe Calculator
 # Instructions: Build a calculator that handles invalid input and division by zero
 # ==========================
-
+def get_valid_grade():
+    while True:
+        try:
+            grade = float(input)("Enter your grade: ")
+            if 0 <= grade <= 100:
+                return grade
+            else:
+                print("Grade must be between 0-100")
+        except ValueError:
+            print("Error: Enter a valid grade")
 
 
 # ==========================
 # Challenge 2: Grade Input Validator
 # Instructions: Keep asking for a grade until a valid number between 0-100 is entered
 # ==========================
+valid_grade = get_valid_grade()
