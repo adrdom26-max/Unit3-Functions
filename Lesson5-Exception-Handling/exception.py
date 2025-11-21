@@ -46,9 +46,8 @@ Lesson 5: Exception Handling - Practice Exercises
 #     try:
 #         result = a / b
 #         return result
-#     except:
-#         print("An error occured")
-#         return 0
+#     except Exception as error:
+#         print("An error occured: {error}")
 
 # print(safe_divide(10, 2))
 # print(safe_divide(10, 0))
